@@ -4,7 +4,9 @@
   "description": "API que administre los libros publicados en google.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest --watch"
   },
   "author": "Bryan Sabillon",
   "license": "MIT",
@@ -12,10 +14,12 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "jest": "^24.9.0",
-    "nodemon": "^1.19.2",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.19.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.2"
   }
 }

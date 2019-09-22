@@ -19,7 +19,7 @@ database
   });
 
 
-  app.use('/pokemons',require('./routes/pokemons'));
+  app.use('/books',require('./routes/books'));
   
 
 
